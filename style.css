@@ -1,0 +1,15 @@
+.title {
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    height: auto;
+    width: 25%;
+}
