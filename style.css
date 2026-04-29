@@ -1,3 +1,12 @@
+#body {
+    background: linear-gradient(
+        skyblue 0%, green 50%, magenta 80%, red 100%
+    ) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 .title {
     justify-content: center;
     text-align: center;
@@ -7,6 +16,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
 }
 
 img {

@@ -1,6 +1,4 @@
-const ting = [
-    "Banan", "Æble", "Pære"
-];
+const ting = ["Banan", "Æble", "Pære"];
 
 function main() {
     const velkommen = document.getElementById("velkommen");
@@ -9,7 +7,7 @@ function main() {
     velkommen.style.color = "red";
 
     let farve = "red";
-    
+
     setInterval(() => {
         if (farve === "red") {
             velkommen.style.color = "blue";
@@ -30,6 +28,18 @@ function main() {
             nuværende = 0;
         }
     }, 1_000);
+
+
+    const textBox = document.getElementById("text");
+    textBox.addEventListener("input", testText);
+}
+
+function testText() {
+    const textBox = document.getElementById("text");
+
+    if (textBox.value === "hej") {
+        console.log("hej med dig :))))");
+    }
 }
 
 function destroy() {
