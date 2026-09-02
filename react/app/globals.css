@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes:
+        caramellatte --default,
+        coffee --prefersdark;
+    logs: false;
+}
+
+@theme {
+    --spacing: clamp(10px, 2vw, 18px);
+}
